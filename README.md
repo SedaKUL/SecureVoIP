@@ -22,16 +22,18 @@ This will show to you:
 ./Configure x86_64-whatever-linux2
 ```
 
+```bash
+make -j4
+```
+### PJSIP
+To be able to create sip client in this project [pjsip](https://github.com/pjsip/pjproject) sip stack will be used. Clone it and follow the steps.
+
+
 > Edit pjsua2-demo file according to following line
 
 ```bash
 nano <pj-path>/pjsip-apps/src/samples/pjsua2_demo.cpp 
 ```
-```bash
-make -j4
-```
-### PJSIP
-To be able to create sip client in this project [pjsip](https://github.com/pjsip/pjproject) sip stack will be used.
 
 ```bash
 ./configure --with-ssl=<PATH_OF_BUILT_OPENSSL>
